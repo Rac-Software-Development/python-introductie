@@ -1,8 +1,27 @@
 # Opdracht
-Onderstaand vindt je diverse opdrachten waar je mee aan de slag kunt.
-Type de opdrachten altijd zelf, zodat je de Python syntax in de vingers krijgt. Bij gemaakte fouten ga je de errors herkennen. Op een gegeven moment weet je wat je moet doen om dit te herstellen.
-Type onderstaande opgaven in en kijk wat voor output je op het scherm krijgt. Pas een waarde aan en kijk wat het effect is. Dit zijn de basis dingen waar we later alles op gaan bouwen. Het is essentieel dat je deze zaken goed snapt.
+Onderstaand vind je diverse opdrachten waar je mee aan de slag kunt. Type de opdrachten altijd zelf, zodat je de Python syntax in de vingers krijgt. Bij gemaakte fouten ga je de errors herkennen en leer je sneller wat je moet doen om deze te herstellen.
 
+* Probeer vanaf hier eerst zelf de opdrachten te maken en kijk pas naar de voorgestelde code als je er echt niet uitkomt.
+
+We verwijzen in volgende opdrachten misschien naar de code die je voor deze opdrachten schrijft. Het is dus belangrijk dat je deze opdrachten eerst maakt en op slaat in een bestand. Je kan dit bestand bijvoorbeeld de naam `Les4.py` geven.
+
+# List
+Een lijst is een verzameling van elementen. Deze elementen kunnen van elk data type zijn. Een lijst wordt gedefinieerd door vierkante haken `[]` te gebruiken. De elementen in de lijst worden gescheiden door een komma `,`.
+
+```python
+# Create a list
+my_list = [1, 2, 3, 4, 5]
+print(my_list)
+# Elementen mogen van elk data type zijn
+my_list = [1, 2, 3, "four", 5]
+print(my_list)
+# Elementen hebben een "index" nummer om hun locatie in de lijst aan te geven. Die index begint bij 0.
+print(my_list[0])
+# Eleemnten toevoegen achteraan een lijst
+my_list.append(6)
+# ..of op een specifieke locatie
+my_list.insert(3, "three")
+```
 
 # List of games
 Gegeven een lijst met 10 populaire games in 2021.
@@ -20,7 +39,7 @@ Gegeven een lijst met 10 populaire games in 2021.
 
 
 ## Opdrachten
-Maak een Python programma waarin de games in een lijst worden opgeslagen. De naam van de lijst is betekenisvol voor de data die in de lijst staat. M.a.w. een variabele naam waaraan je direct ziet waar de elementen van de lijst over gaan.
+Maak een Python programma waarin de games in een lijst worden opgeslagen. Daarna gaan we operaties loslaten op die lijst. 
 Na elke opdracht geef je de lijst op het scherm weer.
 
 ```python
@@ -93,7 +112,16 @@ print(popular_games)
 
 
 # Tuple
-Tuples zijn vergelijkbaar met lists. Ze zijn echter niet meer wijzigbaar nadat ze zijn aangemaakt.
+Tuples zijn vergelijkbaar met lists. Ze zijn echter niet meer wijzigbaar nadat ze zijn aangemaakt. Om een tuple te maken gebruik je ronde haakjes in plaats van vierkante haakjes.
+
+```python
+# Create a tuple
+my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple)
+# Tuples zijn niet wijzigbaar
+my_tuple[0] = 6  # Geeft een error
+```
+
 
 Gegeven een lijst met computer leveranciers
 - Apple
@@ -110,12 +138,8 @@ Gegeven een lijst met computer leveranciers
 - Sony
 
 ## Opdrachten
-Maak een Python programma waarin de computer leveranciers in een tuple worden opgeslagen. De naam van de tuple is betekenisvol voor de data die in de lijst staat. M.a.w. een variabele naam waaraan je direct ziet waar de elementen van de tuple over gaan.
+Maak een Python programma waarin de computer leveranciers in een tuple worden opgeslagen. 
 Na elke opdracht geef je de tuple op het scherm weer.
-
-```python
-print(naam_van_mijn_tuple)
-```
 
 >a] Geef in een volzin het aantal computer leveranciers in de tuple. *"De tuple bevat [aantal computer leveranciers] computer leveranciers."*
 
@@ -168,11 +192,19 @@ print()
 
 
 # Dictionary
-De key/value pair collectie. Dit is wellicht het belangrijkste datatype in Python. Grote delen van de interne structuur is gebaseerd op dictionaries.
+Een heel belangrijk datatype is de "dictionary", in andere talen ook wel een "map" of "object" genoemd. Hierin kun je key/value pairs opslaan. Een key is een unieke waarde die je gebruikt om een value op te halen. Een value is een waarde die je opslaat in de dictionary. Een dictionary maak je met behulp van accolades.
 
 ```python
-print(naam_van_mijn_dictionary)
+dictionary = {"key": "value"}
+print(dictionary)
+print(dictionary["key"])
+dictionary["key"] = "new value"
+print(dictionary["key"])
+dictionary["new key"] = "new value"
+print(dictionary)
 ```
+
+Dictionaries hebben heel veel operaties en zul je veel gebruiken in alle talen.
 
 Gegeven een dictionary met telefoonnummers uit films *(naam van de film is de key, het nummer de value)*:
 - The Simpsons, 636-555-3226

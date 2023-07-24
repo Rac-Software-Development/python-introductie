@@ -1,8 +1,8 @@
 user_input = ""
 while user_input != ".":
-    user_input = input("Please enter a number: ")
+    user_input = input("Please enter a number (or use a . to stop): ")
     if user_input == ".":
-        print("Tot ziens")
+        print("Goodbye")
     else:
         number_input = int(user_input)
         numbers = list(range(2, number_input - 1))

@@ -1,8 +1,6 @@
 # Opdracht
-Onderstaand vindt je diverse opdrachten waar je mee aan de slag kunt.
-Type de opdrachten altijd zelf, zodat je de Python syntax in de vingers krijgt. Bij gemaakte fouten ga je de errors herkennen. Op een gegeven moment weet je wat je moet doen om dit te herstellen.
+Onderstaand vind je diverse opdrachten waar je mee aan de slag kunt. Type de opdrachten altijd zelf, zodat je de Python syntax in de vingers krijgt. Bij gemaakte fouten ga je de errors herkennen en leer je sneller wat je moet doen om deze te herstellen.
 Type onderstaande opgaven in en kijk wat voor output je op het scherm krijgt. Pas een waarde aan en kijk wat het effect is. Dit zijn de basis dingen waar we later alles op gaan bouwen. Het is essentieel dat je deze zaken goed snapt.
-
 
 ## Integers
 Rekenen met integers heb je in de vorige les al een beetje gedaan. We gaan nu naar wat grotere getallen kijken. Python kan namelijk met enorme getallen omgaan. Dit kost uiteraard enorme rekenkracht waardoor sommige PC's langere tijd non-responsive kunnen worden. Hier zijn de getallen niet extreem gekozen.
@@ -11,6 +9,7 @@ Rekenen met integers heb je in de vorige les al een beetje gedaan. We gaan nu na
 # Display large numbers in a readable format
 people = 7861304740
 print(people)
+# Je mag underscores gebruiken om getallen leesbaar te maken
 people = 7_861_304_740
 print(people)
 ```
@@ -20,6 +19,7 @@ print(people)
 
 
 ```python
+people = 7_861_304_740
 # Calculations with big numbers
 meals = 3
 people_eat = people * meals
@@ -31,7 +31,6 @@ print(meals_per_year)
 
 # What is the data type?
 type(meals_per_year)
-
 ```
 
 ### Output
@@ -55,6 +54,7 @@ print(maximum_capacity)
 
 ```python
 # Print capacity used on the ethernet
+ethernet_speed_mbps = 1000
 download_speed_average = 96.25
 usage = ethernet_speed_mbps / download_speed_average
 print(usage)
@@ -94,7 +94,6 @@ ship = "Titanic"
 print(ship)
 ship = """Titanic"""
 print(ship)
-
 ```
 
 ### Output
@@ -102,16 +101,13 @@ print(ship)
 
 
 ```python
-# Note: The sentence could contain an apostrophe
-# Using an apostrophe is possible if you use the double quotes to surround the string
-sentence = "He doesn’t think it’s a good idea to spend all his money on video games."
-print(sentence)
+# Vaak zul je quotes in een string moeten gebruiken. Dit kan met de escape character \, of door de string met enkele quotes te omringen
+zonder_escape = 'This is a "good" plan'
+print(zonder_escape)
+met_escape = "This is a \"good\" plan"
+print(met_escape)
 
 ```
-
-### Output
-![Antwoord 8](./Images/Les2-Antwoord_8.png)
-
 
 ```python
 # Gebruik """ """ als je meerdere regels tekst moet tonen
@@ -145,7 +141,7 @@ type(invention)
 
 
 ## Boolean
-De boolean is een True of False indicatie. Deze toestand kan uit de waarde van variabelen komen of uit vergelijkingen.
+Programmeren betekent veel beslissingen nemen. Als "dit" dan "dat", of wat we vaker zeggen, als "dit is waar" dan "doe dat". Waar en niet waar zijn de basis van de boolean, in python aangegeven met True en False (let op de hoofdletters!).
 
 ```python
 logged_in = False
@@ -153,12 +149,21 @@ print(logged_in)
 
 netwerk_activity = True
 print(netwerk_activity)
-
 ```
 
 ### Output
 ![Antwoord 11](./Images/Les2-Antwoord_11.png)
 
+### Logische operatoren
+Vergelijkingsoperatoren zijn operatoren die twee waarden met elkaar vergelijken. De uitkomst van een vergelijking is altijd een boolean. De volgende vergelijking operatoren zijn beschikbaar:
+| Operator | Betekenis |
+| --- | --- |
+| == | Is gelijk aan |
+| != | Is niet gelijk aan |
+| < | Is kleiner dan |
+| <= | Is kleiner dan of gelijk aan |
+| > | Is groter dan |
+| >= | Is groter dan of gelijk aan |
 
 ```python
 user_name = "John Doe"
@@ -191,7 +196,7 @@ Zet de volgende formule om naar Python code:
 
 
 Bereken het antwoord als x = 9.1
-Geef het anwtoord weer in de volzin:
+Geef het antwoord weer in de volzin:
 
 De waarde van y = [antwoord berekening] als x = [waarde van x].
 

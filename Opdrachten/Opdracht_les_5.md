@@ -37,6 +37,15 @@ Als je het jezelf moeilijker wilt maken kun je proberen ditzelfde programma op t
 ## Breaks en continues
 Een andere techniek die je veel zult gebruiken is het onderbreken van een loop. De twee meest voorkomende manieren zijn "break" en "continue". Met een "break" stop je de loop helemaal. Met een "continue" ga je naar de volgende iteratie van de loop en voer je opvolgende code in de loop niet uit.
 
+```python
+for i in range(1, 10):
+    if i == 5:
+        continue
+    print(i)
+    if i == 7:
+        break
+```
+
 Breaks gebruik je bijvoorbeeld als je lijsten of dictionaries moet doorzoeken. Als je betreffende waarde al hebt gevonden (of zeker weet dat die er niet in zit) gebruik je een break om de loop te stoppen en versneld door te gaan met de rest van je programma.
 
 Je gaat een programma schrijven dat alle priemgetallen onder de 100 uitrekent. Ter herinnering, een priemgetal is een cijfer dat alleen deelbaar is door zichzelf, door alle andere getallen komt er een niet geheel getal uit. Lus door alle mogelijke delers en gebruik een "break" om te stoppen met zoeken als je een deler hebt gevonden. Print het priemgetal iedere keer dat je zeker weet dat je er één hebt.  
@@ -59,6 +68,8 @@ Opdracht 1: In het klassieke bingo spel krijg je een kaart met willekeurige geta
 
 Schrijf een programma dat een bingokaart genereert, in 4x4 formaat (4 rijen, 4 kolommen). Gebruik als uitgangspunt de volgende code om een lijst met willekeurige cijfers te genereren: 
 ```python
+# We hebben de random module nodig om willekeurige getallen te genereren
+import random
 # Totaal aantal getallen op de kaart zal hoogte x breedte zijn
 bingo_number_total = 4 ** 2
 # Daarna maken we een lijst met 99 getallen waar we uit gaan kiezen
