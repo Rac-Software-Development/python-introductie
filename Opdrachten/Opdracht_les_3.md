@@ -21,16 +21,16 @@ print(f'Your age is {age_str}')
 De input() functie levert altijd een string terug, vandaar dat de variabele _str heeft meegekregen, om dit te benadrukken. Dit is overigens de enige plaats waarop deze toevoeging handig is.
 
 
-# Internet verbindngsselectie
+# Internet verbinding selectie
 Vraag aan de gebruiker welke verbinding hij/zij wil gebruiken om met het internet te verbinden. Keuze uit:
 - 4G
 - 5G
 - Wifi open
 
 Als de gebruiker de Wifi open kiest, dan geef je een extra waarschuwing:
-*"U heeft de voor de Wifi open gekozen, wij wijzen u erop dat de data door de eigenaar van dit netwerk is te lezen."*. Vervolgens stel je nog de vraag of de gebruiker nog steeds wil verbinden. Waarbij de gebruiker *"ja"* of *"nee"* kan antwoorden. Als de gebruiker met *"ja"* antwoord dan krijgt deze het standaard antwoord met de verbindingskeuzes. Bij *"nee"* of een onbekende invoer krijgt de gebruiker de melding: *"U bent niet verbonden!"*.
+*"U heeft de voor de Wifi open gekozen, wij wijzen u erop dat de data door de eigenaar van dit netwerk is te lezen."*. Vervolgens stel je nog de vraag of de gebruiker nog steeds wil verbinden. Waarbij de gebruiker *"ja"* of *"nee"* kan antwoorden. Als de gebruiker met *"ja"* antwoord dan krijgt deze het standaard antwoord met de verbinding keuzes. Bij *"nee"* of een onbekende invoer krijgt de gebruiker de melding: *"U bent niet verbonden!"*.
 
-Bij alle andere verbindingskeuzes geef je de tekst: *"U bent verbonden via \<**hier de gekozen verbinding plaatsen**>!"*
+Bij alle andere verbinding keuzes geef je de tekst: *"U bent verbonden via \<**hier de gekozen verbinding plaatsen**>!"*
 
 Wanneer je onbekende invoer krijgt geef je de melding: *"Onbekende invoer, er wordt geen verbinding tot stand gebracht."*
 
