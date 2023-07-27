@@ -187,6 +187,18 @@ print(f"The alarm is activated, is: {alarm_activated}")
 ### Output
 ![Antwoord 12](./Images/Les2-Antwoord_12.png)
 
+## Containers
+Op een terminal worden schepen gelost en geladen. Tijdens het lossen worden 331 containers gelost in 441 minuten. Na het lossen wordt het schip geladen met 287 containers in 295 minuten.
+Bedenk een goede representieve variabele naam voor de *geloste* containers en ken het aantal geloste containers toe aan de variabele.
+Bedenk een goede representieve variabele naam voor de *geladen* containers en ken het aantal geladen containers toe aan de variabele.
+Bereken van zowel het laden als lossen de gemiddelde laad/lostijd. Geef deze weer op in een volzin: De gemiddelde tijd die het laden of lossen duurt.
+
+### Output
+![Antwoord 15](./Images/Les2-Antwoord_Source_3.png)
+
+### Uitwerking
+Een voorbeeld uitwerking: [Les2_Source3.py](Uitwerkingen%2FLes2_Source3.py)
+
 
 ## Berekening
 Zet de volgende formule om naar Python code:
@@ -194,27 +206,16 @@ Zet de volgende formule om naar Python code:
 ![Formule 1](./Images/Formule_1.png)
 
 
-
 Bereken het antwoord als x = 9.1
 Geef het antwoord weer in de volzin:
 
 De waarde van y = [antwoord berekening] als x = [waarde van x].
 
-```python
-import math
-
-x = 9.1
-term1 = (3 * x) - 1
-term2 = 1 + x
-term3 = (term2)**2
-y = math.sqrt(term1) + term3
-print(f'De waarde van y = {y} als x = {x}')
-
-```
-
 ### Output
 ![Antwoord 13](./Images/Les2-Antwoord_Source_1.png)
 
+### Uitwerking
+Een voorbeeld uitwerking: [Les2_Source1.py](Uitwerkingen%2FLes2_Source1.py)
 
 ## Berekening
 Zet de volgende formule om naar Python code:
@@ -230,53 +231,11 @@ Bereken het antwoord als:
 Geef het antwoord weer in een volzin:
 De waarde van y = [antwoord berekening] als a = {waarde van a}, b = {waarde van b} en c = {waarde van c}
 
-
-```python
-import math
-
-a = 0.87
-b = 22.7
-c = 5.03
-term1 = b**2
-term2 = 4 * a * c
-term3 = term1 - term2
-term4 = math.sqrt(term3)
-term5 = -b + term4
-term6 = 2 * a
-y = term5 / term6
-
-print(f'De waarde van y = {y} als a = {a}, b = {b} en c = {c}')
-
-```
-
 ### Output
 ![Antwoord 14](./Images/Les2-Antwoord_Source_2.png)
 
-
-## Containers
-Op een terminal worden schepen gelost en geladen. Tijdens het lossen worden 331 containers gelost in 441 minuten. Na het lossen wordt het schip geladen met 287 containers in 295 minuten.
-Bedenk een goede representieve variabele naam voor de *geloste* containers en ken het aantal geloste containers toe aan de variabele.
-Bedenk een goede representieve variabele naam voor de *geladen* containers en ken het aantal geladen containers toe aan de variabele.
-Bereken van zowel het laden als lossen de gemiddelde laad/lostijd. Geef deze weer op in een volzin: De gemiddelde tijd die het laden of lossen duurt.
-
-```python
-# Terminal information
-containers_unloaded = 331
-unload_time = 441
-containers_loaded = 287
-load_time = 295
-
-# Calculate the averages containers per minute
-average_unload_time = unload_time / containers_unloaded
-average_load_time = load_time / containers_loaded
-
-print(f'De gemiddelde lostijd bedraagt {average_unload_time} minuten per container')
-print(f'De gemiddelde lostijd bedraagt {average_load_time} minuten per container')
-
-```
-
-### Output
-![Antwoord 15](./Images/Les2-Antwoord_Source_3.png)
+### Uitwerking
+Een voorbeeld uitwerking: [Les2_Source2.py](Uitwerkingen%2FLes2_Source2.py)
 
 
 ## Berekening
@@ -293,27 +252,9 @@ Bereken de delta en druk het berekende antwoord af op het scherm in de zin:
 Vanaf een komeet gezien zit u {x} uur op de tuinstoel.
 Waarbij de {x} wordt vervangen door het berekende antwoord.
 
-```python
-# Information
-t = 4
-v = 179875474.8
-c = 299_792_458
-
-# Breakup the formula
-term1 = v**2
-term2 = c**2
-term3 = term1 / term2
-term4 = 1 - term3
-term5 = v * term4
-term6 = 1 / term5
-delta = t * term6
-
-# Display result
-print(f'Vanaf een komeet gezien zit u {delta} uur op de tuinstoel.')
-print(f'Vanaf een komeet gezien zit u {delta * 60.0} minuten op de tuinstoel.')
-print(f'Vanaf een komeet gezien zit u {delta * 60.0 * 60.0} seconden op de tuinstoel.')
-
-```
-
 ### Output
 ![Antwoord 16](./Images/Les2-Antwoord_Source_4.png)
+
+### Uitwerking
+Een voorbeeld uitwerking: [Les2_Source4.py](Uitwerkingen%2FLes2_Source4.py)
+

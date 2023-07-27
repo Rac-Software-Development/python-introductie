@@ -16,9 +16,9 @@ Een techniek die je heel veel zult gebruiken is het doorlopen van een lijst en h
 
 Een [hele](https://en.wikipedia.org/wiki/Fizz_buzz) [bekende](https://wiki.c2.com/?FizzBuzzTest) opdracht om te oefenen met programmeren is "Fizz Buzz". De regels zijn heel simpel:
 - Loop door alle getallen van 1 tot 30
-- Als het getal deelbaar is door 3 (bijvoorbeeld 3, 6 en 9) print dan "Fizz"
-- Als het getal deelbaar is door 5 (dus 5, 10, 15) print dan "Buzz"
-- Als het getal deelbaar is door 3 en 5 (dus 15, 30) print dan "FizzBuzz"
+- Als het getal deelbaar is door 3 (bijvoorbeeld 3, 6 en 9) print "Fizz"
+- Als het getal deelbaar is door 5 (dus 5, 10, 15) print "Buzz"
+- Als het getal deelbaar is door 3 en 5 (dus 15, 30) print "FizzBuzz"
 - In alle andere gevallen, print het getal zelf
 
 Stel dat je door de getallen 1 tot 10 zou lopen zou dit bijvoorbeeld de uitkomst zijn: 
@@ -26,13 +26,17 @@ Stel dat je door de getallen 1 tot 10 zou lopen zou dit bijvoorbeeld de uitkomst
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz
 ```
 
-Opdracht: Schrijf een programma dat de Fizz Buzz opdracht uitvoert. We helpen je wat op weg door alvast een lijst met getallen te maken. Gebruik een "for ... in" loop om door de lijst te lopen.  
+Opdracht: Schrijf een programma dat de Fizz Buzz opdracht uitvoert door met module te controleren of de getallen deelbaar zijn. We helpen je wat op weg door alvast een lijst met getallen te maken. Gebruik een "for ... in" loop om door de lijst te lopen.  
 
 ```python
 numbers = list(range(1, 31))
 ```
 
 Als je het jezelf moeilijker wilt maken kun je proberen ditzelfde programma op te lossen niet met een "for .. in" maar met een "while" loop en één van de vele functies die je kunt aanroepen op een lijst object. Je zou hier ook de "walrus" operator kunnen toepassen, een recente toevoeging aan Python.
+
+### Uitwerking
+Een voorbeeld uitwerking: [Les5_Source1.py](Uitwerkingen%2FLes5_Source1.py)
+
 
 ## Breaks en continues
 Een andere techniek die je veel zult gebruiken is het onderbreken van een loop. De twee meest voorkomende manieren zijn "break" en "continue". Met een "break" stop je de loop helemaal. Met een "continue" ga je naar de volgende iteratie van de loop en voer je opvolgende code in de loop niet uit.
@@ -56,6 +60,10 @@ Begin je programma met de volgende code:
 ```python 
 numbers = list(range(1, 100))
 ```
+
+### Uitwerking
+Een voorbeeld uitwerking: [Les5_Source2.py](Uitwerkingen%2FLes5_Source2.py)
+
 
 ## Geneste lijsten
 Wat je ook regelmatig zult tegenkomen is een geneste lijst, oftewel een lijst met lijsten. Bijvoorbeeld: 
@@ -90,6 +98,10 @@ Opdracht 2: Trek 50 willekeurige cijfers en streep die uit je bingo kaart weg. B
 
 Opdracht 3: Nadat alle getallen zijn weggestreept, controleer de bingokaart en print "Bingo!" als je een volle rij of kolom hebt. Dit is een pittige opdracht - een oplossingsrichting is het totaal van iedere rij en iedere kolom te tellen en als er een rij of kolom is waarvan de som 0 is, dan heb je bingo.
 
+### Uitwerking
+Een voorbeeld uitwerking: [Les5_Source3.py](Uitwerkingen%2FLes5_Source3.py)
+
+
 
 ## While loops
 Een andere manier om door een lijst te lopen is met een "while" loop. Een "while" loop is een loop die blijft herhalen zolang een bepaalde conditie waar is.
@@ -110,109 +122,6 @@ Geef een getal: 4
 Geef een getal: .
 Tot ziens!
 ```
-Als uitbreiding: het is natuurlijk heel lastig dat je alleen cijfers of een punt kunt invoeren. Bij tekst faalt je programma met een lelijke fout. Je zou een voorsprong kunnen nemen op de stof door te kijken naar de "try ... except" constructie. 
 
-# Uitwerkingen
-Mocht je niet uit de opdrachten komen, dan kun je onderstaande uitwerkingen gebruiken ter inspiratie: 
-
-- Itereren over een lijst
-```python
-numbers = list(range(1, 31))
-for number in numbers:
-    result = ""
-    if number % 3 == 0:
-        result += "Fizz"
-    if number % 5 == 0:
-        result += "Buzz"
-    if result == "":
-        result = number
-    print(result)
-```
--  Breaks en continues
-```python
-numbers = list(range(1, 100))
-for number in numbers:
-    is_prime = True
-    for deler in numbers:
-        if deler < number and deler > 1:
-            if number % deler == 0:
-                is_prime = False
-                break
-    if is_prime:
-        print(number)
-```
-
-- Bingo!
-```python
-import random
-
-# Vul de bingo kaart
-bingo_card = []
-bingo_card_size = 4
-bingo_number_total = bingo_card_size ** 2
-bingo_numbers_all = list(range(1, 100))
-random.shuffle(bingo_numbers_all)
-bingo_numbers = bingo_numbers_all[:bingo_number_total]
-for line in range(bingo_card_size):
-    bingo_row = []
-    for column in range(bingo_card_size):
-          bingo_row.append(bingo_numbers.pop())
-    bingo_card.append(bingo_row)
-
-# Trek 50 willekeurige getallen
-draw_number = 50
-bingo_balls = list(range(1, 100))
-random.shuffle(bingo_balls)
-drawn_balls = bingo_balls[:draw_number]
-# Streep de getallen weg die je op jouw kaart hebt staan
-# Dit is niet de meest efficiënte manier, maar het werkt
-for ball in drawn_balls:
-    for line in range(bingo_card_size):
-        for column in range(bingo_card_size):
-            if bingo_card[line][column] == ball:
-                bingo_card[line][column] = 0
-
-# Controleer of je een bingo hebt
-bingo = False
-for index in range(bingo_card_size):
-    if sum(bingo_card[index]) == 0:
-        bingo = True
-        break
-    # De kolommen zijn wat lastiger..
-    column_total = 0
-    for column_index in range(bingo_card_size):
-        column_total += bingo_card[column_index][index]
-    if column_total == 0:
-        bingo = True
-        break
-
-print(bingo_card)
-if bingo:
-    print("Yes! Bingo!")
-else:
-    print("Jammer, geen bingo, morgen weer een dag")
-```
-
-- While loops
-```python
-user_input = ""
-while user_input != ".":
-    user_input = input("Please enter a number: ")
-    if user_input == ".":
-        print("Tot ziens")
-    else:
-        number_input = int(user_input)
-        numbers = list(range(2, number_input - 1))
-        is_prime = True
-        for deler in numbers:
-            if deler < number_input:
-                if number_input % deler == 0:
-                    is_prime = False
-                    break
-        if is_prime:
-            print("Is prime: " + str(user_input))
-        else:
-            print("Not prime: " + str(user_input))
-```
-
-
+### Uitwerking
+Een voorbeeld uitwerking: [Les5_Source4.py](Uitwerkingen%2FLes5_Source4.py)
