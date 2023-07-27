@@ -1,6 +1,6 @@
 # Python lessen IT-Domein
 ## Python 1
-De website voor de Python lessen is te vinden op [https://project.hosted.hr.nl/rac/it/python/](https://project.hosted.hr.nl/rac/it/python/)
+De website voor de Python lessen met filmpjes is te vinden op [https://project.hosted.hr.nl/rac/it/python/](https://project.hosted.hr.nl/rac/it/python/)
 
 ## Opbouw van de Python lessen
 De onderwerpen van de lessen worden in korte videoclips weergegeven. Waarbij een voice-over verteld wat er gebeurt en zijn er voor bepaalde onderwerpen animaties die de wat abstractere onderwerpen visueel weergeven. Voor de Ad Software Development verlopen de lessen iets anders, omdat zij veel meer programmeeruren in een week hebben als de andere opleidingen. De onderwerpen zijn echter gelijk.
@@ -32,7 +32,7 @@ De lessen bestaan uit 7 blokken:
 
 ### Studenten
 Van de studenten wordt een hoge vorm van zelfdiscipline verwacht. Zij bestuderen de les voordat ze naar de les komen. Een uitzondering vormt de eerste les, omdat we dan nog niet in een klassikale setting met de studenten hebben kunnen praten over de manier waarop de lessen worden gerealiseerd.
-De studenten kunnen in de les kunnen vragen stellen over het onderwerp, wij kunnen deze dan beantwoorden of pareren en daar later op terugkomen (als we met een collega hebben overlegd of zelf even hebben geexperimenteerd). Bepaalde onderwerpen kunnen tijdens de les worden geplaatst in de context van de studenten, zodat de materie beter blijft hangen. Abstracte begrippen of acties zijn dan beter door de studenten voor te stellen.
+De studenten kunnen in de les kunnen vragen stellen over het onderwerp, wij kunnen deze dan beantwoorden of pareren en daar later op terugkomen (als we met een collega hebben overlegd of zelf even hebben geëxperimenteerd). Bepaalde onderwerpen kunnen tijdens de les worden geplaatst in de context van de studenten, zodat de materie beter blijft hangen. Abstracte begrippen of acties zijn dan beter door de studenten voor te stellen.
 
 ### Opdrachten
 Als alle vragen behandeld zijn en de het onderwerp is voldoende besproken geven we de studenten opdracht(en). Zij kunnen daar aan werken. Wij lopen dan als coaches rond om ze te ondersteunen waar nodig. Bepaalde vragen kunnen centraal worden getrokken en behandeld, wanneer ze bijvoorbeeld meerdere keren voorkomen of als het bij ons een belangrijk punt triggert waarvan we denken dat de rest dat ook moet weten.
