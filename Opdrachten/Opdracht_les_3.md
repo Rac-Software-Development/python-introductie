@@ -72,7 +72,7 @@ Van alle elipsen/ronde/rechthoek symbolen print je de tekst van de flowchart. De
 ![Antwoord 4](./Images/Les3-Antwoord_4.png)
 
 ### Uitwerking
-Een voorbeeld uitwerking: [Les3_Source2.py](Uitwerkingen%2FLes3_Source2.py)
+Een voorbeeld uitwerking: [Les3_Source3.py](Uitwerkingen%2FLes3_Source3.py)
 
 ## Flowchart
 Maak een Python programma die onderstaande flowchart implementeert.
@@ -85,7 +85,7 @@ Van alle elipsen/ronde/rechthoek/rechthoekgolf symbolen print je de tekst van de
 ![Antwoord 6](./Images/Les3-Antwoord_6.png)
 
 ### Uitwerking
-Een voorbeeld uitwerking: [Les3_Source3.py](Uitwerkingen%2FLes3_Source3.py)
+Een voorbeeld uitwerking: [Les3_Source4.py](Uitwerkingen%2FLes3_Source4.py)
 
 ## Bestellen
 Eten bestellen bij de **Mac Donald's**.
@@ -121,4 +121,4 @@ Als de gebruiker *"Meenemen"* heeft gekozen, dan zeg je aan het einde: "*Bedankt
 ![Antwoord 9](./Images/Les3-Antwoord_9.png)
 
 ### Uitwerking
-Een voorbeeld uitwerking: [Les3_Source4.py](Uitwerkingen%2FLes3_Source4.py)
+Een voorbeeld uitwerking: [Les3_Source5.py](Uitwerkingen%2FLes3_Source5.py)
