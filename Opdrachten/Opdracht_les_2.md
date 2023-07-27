@@ -218,7 +218,9 @@ De waarde van y = [antwoord berekening] als x = [waarde van x].
 Een voorbeeld uitwerking: [Les2_Source1.py](Uitwerkingen%2FLes2_Source1.py)
 
 ## Berekening
-Zet de volgende formule om naar Python code:
+Een belangrijke vaardigheid om op te doen is het opsplitsen van een groot probleem naar kleine deelproblemen. Dat ga je in de volgende twee opdrachten doen.  
+
+Zet de volgende formule om naar Python code. Bedenk dat je alle tussenstapjes in variabelen kunt vangen:
 
 ![Formule 2](./Images/Formule_2.png)
 
