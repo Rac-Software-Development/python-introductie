@@ -115,7 +115,7 @@ print(result)
 "Refactoring" is een kreet die je nog veel zult tegenkomen. Refactoring slaat op het herschrijven van code, zonder dat de input of output verandert. Dat doe je vaak omdat je de code beter leesbaar wilt maken, of omdat je de code wilt hergebruiken.
 
 We gaan de code van een vorige opdracht refactoren. Als je onze uitwerking bekijkt van [Les3_Source5.py](Uitwerkingen%2FLes3_Source5.py) zijn daar een paar zaken niet heel netjes: 
-- We vragen gebruikers steeds te kiezen uit een aantal zaken ("KOUD of WARM"), maar die keuze dwingen we niet af. Je kunt nog steeds "LAUW" invoeren waar "KOUD" of "WARM" verwacht wordt. We willen die keuze afdwingen, dat kan met een `while` loop: 
+- We vragen gebruikers steeds te kiezen uit een aantal zaken ("KOUD of WARM"), maar die keuze dwingen we niet af. Je kunt nog steeds "LAUW" invoeren waar "KOUD" of "WARM" verwacht wordt. We willen die keuze afdwingen, dat kan bijvoorbeeld met een `while` loop: 
 ```python
 answer = ""
 while answer != "KOUD" and answer != "WARM":
@@ -136,7 +136,7 @@ def ask_question(question, valid_answers):
         drink_choice = ask_question("Drankjes", ["Warme", "Koude"])
 ```
 
-Neem de oude code en refactor deze, waarbij je bovenstaande drie verbeteringen door voert. 
+Neem de oude code en refactor deze, waarbij je bovenstaande drie verbeteringen doorvoert. 
 
 ### Uitwerking
 Een voorbeeld uitwerking: [Les7_Source3.py](Uitwerkingen%2FLes7_Source3.py)
