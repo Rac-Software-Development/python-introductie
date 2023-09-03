@@ -3,10 +3,10 @@ Onderstaand vind je diverse opdrachten waar je mee aan de slag kunt. Type de opd
 
 * Probeer vanaf hier eerst zelf de opdrachten te maken en kijk pas naar de voorgestelde code als je er echt niet uitkomt.
 
-We verwijzen in volgende opdrachten misschien naar de code die je voor deze opdrachten schrijft. Het is dus belangrijk dat je deze opdrachten eerst maakt en op slaat in een bestand. Je kan dit bestand bijvoorbeeld de naam `Les1.py` geven.
+We verwijzen in volgende opdrachten misschien naar de code die je voor deze opdrachten schrijft. Het is dus belangrijk dat je deze opdrachten eerst maakt en opslaat in een bestand. Je kan dit bestand bijvoorbeeld de naam `Les7.py` geven.
 
 # Functies
-Functies zijn een manier om code te groeperen en te hergebruiken. Je kan een functie zien als een klein programmaatje binnen je programma. Je kan een functie aanroepen en deze kan dan een waarde teruggeven. Je kan ook een functie aanroepen en deze kan dan een actie uitvoeren. Een functie kan ook beide doen, een waarde teruggeven en een actie uitvoeren.
+Functies zijn een manier om code te groeperen en te hergebruiken. Je kan een functie zien als een klein programmaatje binnen je programma. Je kan een functie aanroepen, waardes mee geven om mee te werken en deze kan dan een waarde teruggeven. 
 
 Code splitsen in functies heeft een heleboel voordelen:
 * Je voorkomt dat je code gaat dupliceren. Gedupliceerde code is lastig leesbaar en onderhoudbaar.
@@ -26,7 +26,7 @@ def print_hello():
 print_hello()
 ```
 
-Functies kun je argumenten meegeven. Deze argumenten kun je gebruiken binnen de functie. Bijvoorbeeld:
+Functies kun je argumenten meegeven. De variabelen die je mee geeft in de functie aanroep worden op volgorde aangenomen als argumenten in de functies. Deze argumenten kun je gebruiken binnen de functie. Bijvoorbeeld:
 
 ```python
 def print_hello(name):
@@ -35,7 +35,22 @@ def print_hello(name):
 print_hello('John')    
 ```
 
-### Rekenmachine
+of, een voorbeeld met meerdere argumenten:
+
+```python
+def greeter(name, greeting_type):
+    if greeting_type == 'formal':
+        greeting = 'Hello'
+    elif greeting_type == 'informal':
+        greeting = 'Hi'
+    else:
+        greeting = 'Hey'
+    print(f'{greeting} {name}')
+
+greeter('John', 'formal')
+```
+
+### Opdracht: Rekenmachine
 We gaan een simpele rekenmachine maken die de volgende functies heeft: 
 - `add` telt twee getallen bij elkaar op en drukt het resultaat af
 - `subtract` trekt twee getallen van elkaar af en drukt het resultaat af
@@ -74,7 +89,6 @@ print(number1 + number1)  # drukt "2" af
 ### Uitwerking
 Een voorbeeld uitwerking: [Les7_Source1.py](Uitwerkingen%2FLes7_Source1.py)
 
-
 ## Functies met standaard waarden
 Je kunt een functie argument een standaard waarde geven. Als je de functie aanroept zonder dat argument, dan wordt de standaard waarde gebruikt. Bijvoorbeeld:
 
@@ -86,7 +100,7 @@ print_hello() # drukt "Hello John" af
 print_hello('Jane') # drukt "Hello Jane" af
 ```
 
-### Rekenmachine met extra output
+### Opdracht: Rekenmachine met extra output
 Pas de functies van de rekenmachine aan om een derde waarde te accepteren, "debug", met een standaard waarde van `False`. Als de waarde `True` is, druk dan naast het antwoord de hele som af én een waarschuwing als één van de getallen een 0 is. Bijvoorbeeld:
 
 ```python
@@ -111,7 +125,27 @@ result = add(1, 2)
 print(result)
 ```
 
-### Refactoring
+## Functie argumenten op naam
+Wat in praktijk veel zal gebeuren is dat je een functie aanroept met een heleboel argumenten. Bijvoorbeeld:
+
+```python
+def print_person(name, age, city, country):
+    print(f'{name} is {age} jaar oud en woont in {city}, {country}')
+
+print_person('John', 42, 'Rotterdam', 'Nederland')
+```
+Lastig is dat als je nu in jouw functie een extra argument toevoegt, "achternaam" bijvoorbeeld, dat je al je functie aanroepen moet aanpassen. Dat is niet handig. En dat niet alleen, op een gegeven moment weet je niet meer welke volgorde de argumenten hebben. Dat is niet handig. 
+
+Je kunt argumenten ook op naam meegeven. Bijvoorbeeld:
+```python
+def print_person(name, age, city, country):
+    print(f'{name} is {age} jaar oud en woont in {city}, {country}')
+
+print_person(name='John', age=42, city='Rotterdam', country='Nederland')
+```
+..als we nu een extra argument toevoegen, dan hoeven we de aanroep niet aan te passen.
+
+### Opdracht: Refactoring
 "Refactoring" is een kreet die je nog veel zult tegenkomen. Refactoring slaat op het herschrijven van code, zonder dat de input of output verandert. Dat doe je vaak omdat je de code beter leesbaar wilt maken, of omdat je de code wilt hergebruiken.
 
 We gaan de code van een vorige opdracht refactoren. Als je onze uitwerking bekijkt van [Les3_Source5.py](Uitwerkingen%2FLes3_Source5.py) zijn daar een paar zaken niet heel netjes: 
@@ -140,3 +174,61 @@ Neem de oude code en refactor deze, waarbij je bovenstaande drie verbeteringen d
 
 ### Uitwerking
 Een voorbeeld uitwerking: [Les7_Source3.py](Uitwerkingen%2FLes7_Source3.py)
+
+## Opdracht: Studenten rapport
+In deze opdracht gaan we lijsten, dictionaries en functies combineren. We gaan een programma maken dat een rapport afdrukt van een aantal studenten. Van een student heb je de volgende informatie: 
+- Iedere student zit in één klas, bijvoorbeeld "SWDVT-2023-1A". Niet alle klassen zijn even groot. 
+- Iedere student heeft 4 werkplaats vakken (WP1, WP2, WP3 en WP4)
+- Voor ieder vak is het resultaat bekend. De student heeft een "onvoldoende", een "voldoende", een "goed" of een "uitstekend" gescored. 
+- We noemen een student "excellent" als hij meer dan één uitstekend heeft of als alle resultaten beter dan "voldoende" zijn.
+
+We gaan een rapport maken om aan het einde van het jaar aan de onderwijscoordinator te sturen, met de volgende informatie: 
+- We noemen een student "excellent" als hij meer dan één uitstekend heeft of als alle resultaten beter dan "voldoende" zijn. Welke studenten zijn excellent?
+- Welke klas(sen) hebben het hoogste percentage "excellent" studenten?
+- Welke klas heeft gemiddeld genomen over alle vakken de hoogste scores? Dit is een lastige. Stel voor het gemak dat een onvoldoende = 0 punten, voldoende 2 punten, goed 3 punten en uitstekend 4 punten.
+- Gegeven diezelfde manier van scoren: studenten met een score van 3 of minder punten moeten een inhaal opdracht doen. Welke studenten zijn dat en wat zijn hun resultaten?
+
+Maak gebruik van de volgende functies voor de vier onderzoeksvragen en bedenk dat je jouw dataset waarschijnlijk eerst in verschillende varianten zult moeten omzetten. Bedenk ook dat als je code aan het herhalen bent, dat je dan waarschijnlijk een functie kunt maken.
+```python
+def get_excellent_students(list_of_students):
+    ...
+
+def get_most_excellent_classroom(list_of_classrooms):
+    ...
+
+def get_best_scoring_classroom(list_of_classrooms):
+    ...
+
+def get_failed_students(list_of_students, minimum_score = 4):
+    ...
+
+```
+
+Een voorbeeld van de uitvoer: 
+```
+------ Rapport 02-09-2023 ------
+Excellente studenten: 
+    - Diederik de Vries
+    - Jelle van der Loo
+    
+Klas met de meeste excellente studenten:
+    - SWDVT-2023-1A
+
+Klas met de hoogste scores gemiddeld:
+    - SWDVT-2023-1A
+    
+Studenten met inhaalopdracht:
+    - Mark Otting
+        WP1: onvoldoende
+        WP2: voldoende
+        WP3: voldoende
+        WP4: onvoldoende
+```
+
+### Uitwerking
+Een voorbeeld uitwerking: [Les7_Source4.py](Uitwerkingen%2FLes7_Source3.py)
+
+Je kunt optioneel een dataset genereren met de code in [generate_fake_students.py](Uitwerkingen%2Fgenerate_fake_students.py). Nadat je succesvol een bestand hebt weggeschreven importeer je het resultaat met het volgende commando boven in je Python bestand: 
+```python
+from students_classrooms import students_per_classroom
+```
