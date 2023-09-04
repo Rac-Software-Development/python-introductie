@@ -226,7 +226,7 @@ Studenten met inhaalopdracht:
 ```
 
 ### Uitwerking
-Een voorbeeld uitwerking: [Les7_Source4.py](Uitwerkingen%2FLes7_Source3.py)
+Een voorbeeld uitwerking: [Les7_Source4.py](Uitwerkingen%2FLes7_Source4.py)
 
 Je kunt optioneel een dataset genereren met de code in [generate_fake_students.py](Uitwerkingen%2Fgenerate_fake_students.py). Nadat je succesvol een bestand hebt weggeschreven importeer je het resultaat met het volgende commando boven in je Python bestand: 
 ```python
