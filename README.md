@@ -33,6 +33,9 @@ De lessen bestaan uit de volgende blokken:
     - Functies.
     - Standaard argumenten.
     - Return values.
+Les 8: Scope
+    - Scope
+    - Globale variabelen
 
 Bij elke les zijn er een aantal opdrachten die vervuld moeten worden. De uitwerking is ook beschikbaar, maar we raden je zeer sterk aan om eerst zelf aan de slag te gaan en pas naar de uitwerking te kijken als je klaar bent, óf als je vast loopt en er geen docent of mede student beschikbaar is om je verder te helpen. Een overzicht van de lesstof en opdrachten: 
 
@@ -44,5 +47,6 @@ Bij elke les zijn er een aantal opdrachten die vervuld moeten worden. De uitwerk
 | Les 4: Collections | https://project.hosted.hr.nl/rac/it/python/les-4-collections/ | [Opdracht_les_4.md](Opdrachten%2FOpdracht_les_4.md) |
 | Les 5: Loops       | https://project.hosted.hr.nl/rac/it/python/les-5-loops/ | [Opdracht_les_5.md](Opdrachten%2FOpdracht_les_5.md) |
 | Les 7: Functies    |  | [Opdracht_les_7.md](Opdrachten%2FOpdracht_les_7.md) |
+| Les 8: Scope       |  | [Opdracht_les_8.md](Opdrachten%2FOpdracht_les_8.md) |
 
-Er is geen controle en er hoeft niets te worden ingeleverd, maar begrip van deze onderwerpen is wel een vereiste om de rest van de werkplaats lessen te kunnen volgen. Als je er niet uit komt is het dus verstandig om contact op te nemen met je docent vóórdat je begint aan de eerste werkplaats les!
+Hoewel de opdrachten niet allemaal af moeten vragen we je verderop in Werkplaats 1 te laten zien hoever je bent gekomen en waar je problemen mee had. Als je er niet uit komt is het dus verstandig om contact op te nemen met je docent vóórdat je begint aan de eerste werkplaats les!
