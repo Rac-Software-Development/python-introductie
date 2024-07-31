@@ -33,7 +33,7 @@ De lessen bestaan uit de volgende blokken:
     - Functies.
     - Standaard argumenten.
     - Return values.
-Les 8: Scope
+- Les 8: Scope
     - Scope
     - Globale variabelen
 

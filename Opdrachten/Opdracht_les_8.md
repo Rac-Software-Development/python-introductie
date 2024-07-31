@@ -150,7 +150,7 @@ tijd_nu = time.time()
 doe_berekening()
 tijd_verstreken = time.time() - tijd_nu
 ```
-- Druk de verstreken tijd af
+- Druk de gevonden priemgetallen en de verstreken tijd af
 
 Getallen onder de 10000 zijn zo snel berekend, dat verschil zie je niet. Maar op mijn systeem begint de boel toch te hikken vanaf 1.000.000. Probeer eens twee maal dezelfde invoer grote invoer. Die zou bij de eerste keer tientallen secondes kunnen duren en in de uitvoer de tweede keer al direct klaar zijn. 
 
