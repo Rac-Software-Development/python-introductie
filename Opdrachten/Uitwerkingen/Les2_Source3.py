@@ -7,4 +7,4 @@ average_unload_time = unload_time / containers_unloaded
 average_load_time = load_time / containers_loaded
 
 print(f'De gemiddelde lostijd bedraagt {average_unload_time} minuten per container')
-print(f'De gemiddelde lostijd bedraagt {average_load_time} minutent per container')
+print(f'De gemiddelde laadtijd bedraagt {average_load_time} minutent per container')
